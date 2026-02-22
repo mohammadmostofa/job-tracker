@@ -39,28 +39,28 @@
 
 
         <!-- header conatainer -->
-        <div class=" grid grid-cols-4 space-x-4">
+        <div class=" grid grid-cols-4 space-x-1">
 
           <!-- box one -->
-          <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2 class="font-normal text-sm text-black mb-2  ">Total</h2>
-            <p class="font-bold text-2xl">0</p>
+          <div class="bg-[#FFFFFF] p-4 rounded-sm">
+            <h2  class="font-normal text-sm text-black mb-2  ">Total</h2>
+            <p id="total-1" class="font-bold text-2xl">0</p>
           </div>
           <!-- box two -->
           <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2 class="font-normal text-sm text-black mb-2  ">Applied</h2>
-            <p class="font-bold text-2xl">0</p>
+            <h2  class="font-normal text-sm text-black mb-2  ">Applied</h2>
+            <p id="total-2"  class="font-bold text-2xl">0</p>
           </div>
 
           <!-- box three-->
           <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2 class="font-normal text-sm text-black mb-2 ">Interview</h2>
-           <p class="font-bold text-2xl text-green-800">0</p>
+            <h2  class="font-normal text-sm text-black mb-2 ">Interview</h2>
+           <p  id="total-3 "  class="font-bold text-2xl text-green-800">0</p>
           </div>
 
           <!-- box four -->
          <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2 class="font-normal text-sm text-black mb-2   ">Total</h2>
+            <h2 id="total-4" class="font-normal text-sm text-black mb-2   ">Rejected</h2>
             <p class="font-bold text-2xl text-red-800">0</p>
           </div>
 
@@ -74,7 +74,7 @@
 
   </header>
 
-  <main class="pb-5 space-y-4">
+  <main id="card-main"  class="pb-5 space-y-4">
 
     <section class="max-w-[1100px] mx-auto border p-4" >
 
@@ -82,26 +82,26 @@
       <div class="flex justify-between mb-7">
 
         <h2 class="text-[#002C5C] font-bold text-[24px]">Available Jobs</h2>
-        <p class="text-[#64748B] font-medium text-[16px]">0 job</p>
+        <p id="job" class="text-black font-bold text-xl">0 job</p>
 
       </div>
 
 
       <!-- job button -->
 
-      <div class="space-x-4 mb-4">
-        <button class="btn btn-primary bg-[#3B82F6] border-none px-8 py-4rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
-        <button class="btn btn-primary bg-[#FFFFFF] border-none px-8 py-4rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Applied</button>
-        <button class="btn btn-primary bg-[#FFFFFF] border-none px-8 py-4rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
-        <button class="btn btn-primary bg-[#FFFFFF] border-none px-8 py-4rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
+      <div class="space-x-2 flex ">
+        <button id="All-btn" class="btn btn-primary bg-[#3B82F6] border-none px-4 py-4 rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
+        <button id="interview-btn " class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Applied</button>
+        <button class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
+        <button class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
       </div>
     </section>
 
 
 
    <!--  card section one-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
-
+   
+   <section  class=" card   max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF]  ">
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
 
@@ -151,7 +151,7 @@
      </section>
 
     <!-- card section two-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section  class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -202,7 +202,7 @@
      </section>
 
     <!-- card section three-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class=" card max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -254,7 +254,7 @@
      </section>
 
     <!-- card section four-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class=" card  max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -305,7 +305,7 @@
      </section>
 
     <!-- card section five-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class=" card max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -356,7 +356,7 @@
      </section>
 
     <!-- card section six-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class="card  max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -407,7 +407,7 @@
      </section>
 
     <!-- card section seven-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class= " card max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -458,7 +458,7 @@
      </section>
 
     <!-- card section eight-->
-     <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
+     <section class="card  max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
        <div class="flex justify-between items-center">
@@ -508,8 +508,11 @@
 
      </section>     
 
+
+
+     
      <!-- empty file -->
-      <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] min-h-[300px] flex justify-center items-center">
+      <section  id="empty" class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] min-h-[300px] flex justify-center items-center">
  
       <!-- empty container -->
        <div class="flex flex-col justify-center items-center text-center space-y-2">
@@ -535,6 +538,10 @@
   
 
 
+
+  <!-- connet with script js -->
+
+  <script src="assets/script/script.js"></script>
 
 </body>
 </html>
