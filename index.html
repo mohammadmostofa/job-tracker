@@ -39,29 +39,24 @@
 
 
         <!-- header conatainer -->
-        <div class=" grid grid-cols-4 space-x-1">
+        <div class=" grid grid-cols-3 space-x-3">
 
           <!-- box one -->
           <div class="bg-[#FFFFFF] p-4 rounded-sm">
             <h2  class="font-normal text-sm text-black mb-2  ">Total</h2>
             <p id="total-1" class="font-bold text-2xl">0</p>
           </div>
-          <!-- box two -->
-          <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2  class="font-normal text-sm text-black mb-2  ">Applied</h2>
-            <p id="total-2"  class="font-bold text-2xl">0</p>
-          </div>
 
-          <!-- box three-->
+          <!-- box two-->
           <div class="bg-[#FFFFFF] p-5 rounded-sm">
             <h2  class="font-normal text-sm text-black mb-2 ">Interview</h2>
-           <p  id="total-3 "  class="font-bold text-2xl text-green-800">0</p>
+           <p  id="total-two"  class="font-bold text-2xl text-green-800">0</p>
           </div>
 
-          <!-- box four -->
+          <!-- box three -->
          <div class="bg-[#FFFFFF] p-5 rounded-sm">
-            <h2 id="total-4" class="font-normal text-sm text-black mb-2   ">Rejected</h2>
-            <p class="font-bold text-2xl text-red-800">0</p>
+            <h2 class="font-normal text-sm text-black mb-2">Rejected</h2>
+            <p id="total-three"class="font-bold text-2xl text-red-800">0</p>
           </div>
 
 
@@ -91,8 +86,7 @@
 
       <div class="space-x-2 flex ">
         <button id="All-btn" class="btn btn-primary bg-[#3B82F6] border-none px-4 py-4 rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
-        <button id="interview-btn " class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Applied</button>
-        <button class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
+        <button id="interview" class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
         <button class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
       </div>
     </section>
@@ -139,18 +133,19 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class=" Rejected-btn-one btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
          </div>
 
      </section>
+     
 
-    <!-- card section two-->
+    <!-- card section two -->
      <section  class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] ">
 
       <!-- card title contaner-->
@@ -190,10 +185,10 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button  class=" interviewOne action-btn btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class=" Rejected-btn-one btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -236,16 +231,16 @@
         </div>
 
         <h2 class="text-[#323B49] text-[14px] my-[20px]">Transform complex data into compelling visualizations. Required skills: D3.js, React, and strong analytical thinking.
-</h2>
+       
+        </h2>
            
-
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class=" Rejected-btn-one btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -293,10 +288,10 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class=" Rejected-btn-one  btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -344,10 +339,10 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class=" Rejected-btn-one btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -395,10 +390,10 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class="Rejected-btn-one  btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -446,10 +441,10 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class="Rejected-btn-one  btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
@@ -497,16 +492,16 @@
         <!-- action button -->
          <div class="my-5 space-x-2">
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
+          <button class=" interviewOne btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-green-600 bg-transparent text-green-700
            hover:bg-green-700 hover:text-white hover:transition-5s">interview</button>
 
-          <button class="btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
+          <button class="Rejected-btn-one  btn btn-primary p-x-4 py-3 font-bold border-3 rounded-md border-red-600 bg-transparent text-red-700 
               hover:bg-red-700 hover:text-white   hover:transition-5s">Rejected</button>
 
 
          </div>
 
-     </section>     
+     </section>
 
   </main>
   
