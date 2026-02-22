@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+   <!-- Daisy Ul cnd link -->
+   <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
+   <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/a9d83994ad.js" crossorigin="anonymous"></script>
+
+   <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+ <style>
+  
+  * {
+     font-family: "Geist", sans-serif;
+  }
+
+ </style>
+
+</head>
+
+<body class="bg-[#EEF4FF]">
+
+
+
+  <header>
+       <section class="max-w-[1100px] mx-auto pt-15 px-4">
+      
+
+      <div class="py-4 font-bold text-2xl text-black">
+       <h2>Job Application Tracker</h2>
+      </div>
+
+
+        <!-- header conatainer -->
+        <div class=" grid grid-cols-3 space-x-4">
+
+          <!-- box one -->
+          <div class="bg-[#FFFFFF] p-5 rounded-sm">
+            <h2 class="font-normal text-sm text-black mb-2  ">Total</h2>
+            <p class="font-bold text-2xl">0</p>
+          </div>
+
+          <!-- box two -->
+          <div class="bg-[#FFFFFF] p-5 rounded-sm">
+            <h2 class="font-normal text-sm text-black mb-2 ">Interview</h2>
+           <p class="font-bold text-2xl text-green-800">0</p>
+          </div>
+
+          <!-- box three -->
+         <div class="bg-[#FFFFFF] p-5 rounded-sm">
+            <h2 class="font-normal text-sm text-black mb-2   ">Total</h2>
+            <p class="font-bold text-2xl text-red-800">0</p>
+          </div>
+
+
+        </div>
+
+        <!-- horizantal line -->
+        <hr class="my-8 bg-[#E6E7E9] h-1">
+
+       </section>
+
+  </header>
+
+  
+
+  <main class="pb-5 space-y-4">
+
+    <!-- button section -->
+    <section class="max-w-[1100px] mx-auto border p-4" >
+
+      <!--job heading -->
+      <div class="flex justify-between mb-7">
+
+        <h2 class="text-[#002C5C] font-bold text-[24px]">Available Jobs</h2>
+        <p class="text-[#64748B] font-medium text-[16px]">0 job</p>
+
+      </div>
+
+
+      <!-- job button -->
+
+      <div class="space-x-4 mb-4">
+        <button class="btn btn-primary bg-[#3B82F6] border-none px-8 py-4rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
+        <button class="btn btn-primary bg-[#FFFFFF] border-none px-8 py-4rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
+        <button class="btn btn-primary bg-[#FFFFFF] border-none px-8 py-4rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
+      </div>
+    </section>
+
+
+    <!-- empty section -->
+
+    <section class="max-w-[1100px] mx-auto border p-4 bg-[#FFFFFF] min-h-[300px] flex justify-center items-center">
+ 
+      <!-- empty container -->
+       <div class="flex flex-col justify-center items-center text-center space-y-2">
+
+        <div>
+
+        <img src="assets/images/jobs.png" alt="">
+
+       </div>
+
+       <div>
+        <h2 class="font-bold text-2xl text-black">No jobs available</h2>
+       <p class="text-[#64748B]">Check back soon for new job opportunities</p>
+       </div>
+
+       </div>
+
+
+     </section>
+
+  </main>
+
+
+</body>
+</html>
