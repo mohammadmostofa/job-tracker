@@ -20,6 +20,7 @@ const allBtn = document.getElementById("All-btn").addEventListener("click",funct
       totalResult.innerText = countTotal;
       jobTotal.innerText = countTotal;
 
+
   }else{
       window.location.assign("/blank.html")
   }
@@ -143,9 +144,9 @@ for(let items of rejectedActionBtn){
 
 let RejectedBtn = document.getElementById("Rejected-btn").addEventListener("click",function() {
                        
-  let newCards = document.getElementById("Card-container")
+  let newCard = document.getElementById("Card-container")
 
-              newCards.innerHTML = "";
+              newCard.innerHTML = "";
 
               if( ReArr.length === 0 ){
           window.location.assign("/blank.html")
@@ -156,17 +157,49 @@ let RejectedBtn = document.getElementById("Rejected-btn").addEventListener("clic
          for(let card of ReArr){
 
                 let cloned = card.cloneNode(true);
-                 newCards.appendChild(cloned);
+                 newCard.appendChild(cloned);
 
          }
 
-
+              
       
                     
 } )
 
 
 
+ 
+// newCard
+// remove btn setup
+// let ArrayBox= [];
+// let ReArr = [];
+let DeleteAction = document.querySelectorAll(".delete");
+let deleteCount = 1;
+   for(let btn  of  DeleteAction  ){
+         btn.addEventListener("click",function(event){
+          
+          const currentCard = event.target.closest(".card")
+                 currentCard.remove();
+               ArrayBox = ArrayBox.filter(card =>  card != currentCard);
+                 reviewTotal.innerText = ArrayBox.length;
+
+         })
+   }
+
+
+let DeleteActionR = document.querySelectorAll(".delete");
+let deleteCountR = 1;
+   for(let btn  of  DeleteActionR){
+         btn.addEventListener("click",function(event){
+          
+          const currentCard = event.target.closest(".card")
+                 currentCard.remove();
+               ReArr = ReArr.filter(card => card != currentCard);
+               rejectedTotal.innerText = ReArr.length;
+
+
+         })
+   }
 
 
 
