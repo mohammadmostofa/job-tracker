@@ -1,84 +1,101 @@
+// length of card
 
-let totalJob = document.getElementById("job")
+const totalResult = document.getElementById("total-one");
+const cards = document.querySelectorAll(".card");
+const jobTotal = document.getElementById("job");
+let countContainer = document.getElementById("Card-container");
 
-let totalElement = document.getElementById("total-1");
 
-let emptyFile = document.getElementById("empty");
+let count = 0;
+count = cards.length + 0;
+let countTotal = count;
+totalResult.innerText = countTotal;
+jobTotal.innerText = countTotal;
 
-let cards = document.getElementsByClassName("card");
-let total = cards.length + 1 ;
-let result = total;
- 
-totalJob.innerText = result;
-totalElement.innerText = result;
 
-// allbtn setup
+const allBtn = document.getElementById("All-btn").addEventListener("click",function(){
+    
 
-const allBtn = document.getElementById("All-btn").addEventListener("click", function(){
+  if(countTotal != 0){
+      totalResult.innerText = countTotal;
+      jobTotal.innerText = countTotal;
 
-  let cards = document.querySelectorAll(".card");
-  
-  totalElement.innerText = result;
-
-     if(result != 0 ){
-      
-      return result;
-      
-
-     }  else{
-
-            window.location.assign("/blank.html")
-
-        }
-
+  }else{
+      window.location.assign("/blank.html")
+  }
+   
+    window.location.assign("/index.html")
 
 })
 
 
-// interviewone btn 
-let totalTwo = document.getElementById("total-two");
-let count = 0;
+      
+// secont part 
+let ArrayBox= [];
 
-let allBtnOfReview = document.querySelectorAll(".interviewOne");
+let interviewActionBtn = document.getElementsByClassName("interview-action-btn")
+const reviewTotal = document.getElementById("total-two");
+let reviewCount = 0;
 
-for(let btn of  allBtnOfReview){
-  
-  btn.addEventListener("click", function(){
-    count = count + 1;
-    totalTwo.innerText = count;
-  })
-  
+for(let items of interviewActionBtn){
+          items.addEventListener("click",function(event){
+
+                reviewCount = reviewCount + 1;
+                reviewTotal.innerText = reviewCount;
+
+             const currentCard = event.target.closest(".card-list")  
+
+                let greenBtn = currentCard.querySelector(".green");
+                let whiteBtn = currentCard.querySelector(".white");
+                let redBtn = currentCard.querySelector(".red"); 
+ 
+                
+                if(currentCard){
+
+                  greenBtn.classList.remove("hidden")
+                 redBtn.classList.add("hidden")
+                 whiteBtn.classList.add("hidden")
+
+                 
+
+                }
+
+                 if(currentCard){
+
+                   ArrayBox.push(currentCard);
+
+                }
+
+              
+
+          })
+          
 }
 
 
 
-// local storage set total number  
+// interview store view
+// upore arrey ke aikae ante kaj korte hobe arre te content fillup kora hoyeche
+
+let reviewBtn = document.getElementById("interview-btn").addEventListener("click",function() {
+                       
+  let newCard = document.getElementById("Card-container")
+
+              newCard.innerText = "";
+
+         for(let card of ArrayBox){
+
+                let cloned = card.cloneNode(true);
+                 newCard.appendChild(cloned)
+
+         }
 
 
-
-
-// rejected btn
- let totalThree = document.getElementById("total-three");
- let allRejectedBtns = document.querySelectorAll(".Rejected-btn-one");
-
- for(let btn of allRejectedBtns){
-         btn.addEventListener("click", function(){
-
-          count = count + 1;
-          totalThree.innerText = count
-
-         })
-
- }
-
-
-
-
-
-
-
-
-
+         if( ArrayBox.length === 0 ){
+          window.location.assign("/blank.html")
+         }
+                    
+} )
 
 
 
@@ -86,46 +103,73 @@ for(let btn of  allBtnOfReview){
 
 
 
+// rejectedAction btn
+let rejectedActionBtn = document.getElementsByClassName("Rejected-action-btn")
+const rejectedTotal = document.getElementById("total-three");
+let rejectedCount = 0;
+
+let ReArr = [];
+
+for(let items of rejectedActionBtn){
+       items.addEventListener("click", function(event){
+
+                rejectedCount = rejectedCount + 1 ;
+                rejectedTotal.innerText = rejectedCount;
+
+                const currentCard = event.target.closest(".card-list")  
+
+                 let greenBtn = currentCard.querySelector(".green");
+                let whiteBtn = currentCard.querySelector(".white");
+                let redBtn = currentCard.querySelector(".red");
+
+                if(currentCard){
+                   greenBtn.classList.add("hidden");
+                 redBtn.classList.remove("hidden");
+                 whiteBtn.classList.add("hidden")
+                }
+
+
+                if(!ReArr.includes(currentCard)){
+
+                   ReArr.push(currentCard);
+
+                }
+
+
+       })
+}
+
+
+
+let RejectedBtn = document.getElementById("Rejected-btn").addEventListener("click",function() {
+                       
+  let newCards = document.getElementById("Card-container")
+
+              newCards.innerHTML = "";
+
+              if( ReArr.length === 0 ){
+          window.location.assign("/blank.html")
+          return;
+         }
+
+       
+         for(let card of ReArr){
+
+                let cloned = card.cloneNode(true);
+                 newCards.appendChild(cloned);
+
+         }
+
+
+      
+                    
+} )
 
 
 
 
-// let  interView = document.getElementById("interview");
-// let totalTwo = document.getElementById("total-two");
-// let totalCount = localStorage.getItem("total-two")
-// let count = 0;
 
-// const interViewOnebtn = document.getElementById("interviewOne").addEventListener("click", function(){
 
-//      count = count + 1;
-//      totalTwo.innerText = count;
-
-// })
-
-// interview btn 
 
 
   
-
-
-
-// rejectedbtn
-
-// const totalThree = document.getElementById("total-three");
-// let reject = 0;
-    
-// const RejectedBtnOne = document.getElementById("Rejected-btn-one").addEventListener("click", function(){
-
-//    reject = reject + 1;
-
-// totalThree.innerText = reject;
-
-
-// })
-
-
-
-
-
- 
-
