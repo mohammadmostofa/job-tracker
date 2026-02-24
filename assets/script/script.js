@@ -175,23 +175,21 @@ let RejectedBtn = document.getElementById("Rejected-btn").addEventListener("clic
 // let ReArr = [];
 
 
-document.getElementById("Card-container").addEventListener("click",function(event){
+   document.getElementById("Card-container").addEventListener("click",function(event){
                   
-               let DeleteBtn = event.target.closest(".delete");
+               let DeleteBtn = event.target.closest(".delete");//declare the ation element
                if(DeleteBtn){
                    
-                let currentCard = DeleteBtn.closest(".card");
+                let currentCard = DeleteBtn.closest(".card");//uploaded main container and its store
 
                 if(currentCard){
                      
-                  currentCard.remove();
+                  currentCard.remove(); //remove the element
                 
                 }
 
                }
-                           
-                
-                  
+                                        
 
 })
 
