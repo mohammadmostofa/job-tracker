@@ -130,7 +130,7 @@ for(let items of rejectedActionBtn){
                 }
 
 
-                if(!ReArr.includes(currentCard)){
+                if((currentCard)){
 
                    ReArr.push(currentCard);
 
@@ -173,33 +173,33 @@ let RejectedBtn = document.getElementById("Rejected-btn").addEventListener("clic
 // remove btn setup
 // let ArrayBox= [];
 // let ReArr = [];
-let DeleteAction = document.querySelectorAll(".delete");
-let deleteCount = 1;
-   for(let btn  of  DeleteAction  ){
-         btn.addEventListener("click",function(event){
-          
-          const currentCard = event.target.closest(".card")
-                 currentCard.remove();
-               ArrayBox = ArrayBox.filter(card =>  card != currentCard);
-                 reviewTotal.innerText = ArrayBox.length;
-
-         })
-   }
 
 
-let DeleteActionR = document.querySelectorAll(".delete");
-let deleteCountR = 1;
-   for(let btn  of  DeleteActionR){
-         btn.addEventListener("click",function(event){
-          
-          const currentCard = event.target.closest(".card")
-                 currentCard.remove();
-               ReArr = ReArr.filter(card => card != currentCard);
-               rejectedTotal.innerText = ReArr.length;
+document.getElementById("Card-container").addEventListener("click",function(event){
+                  
+               let DeleteBtn = event.target.closest(".delete");
+               if(DeleteBtn){
+                   
+                let currentCard = DeleteBtn.closest(".card");
+
+                if(currentCard){
+                     
+                  currentCard.remove();
+                
+                }
+
+               }
+                           
+                
+                  
+
+})
 
 
-         })
-   }
+
+
+
+
 
 
 
