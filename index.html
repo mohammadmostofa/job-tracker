@@ -16,6 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
    
 <style>
   
@@ -87,9 +88,11 @@
       </div>   
         <!-- job button -->
       <div class="space-x-2 flex ">
-        <button id="All-btn" class="btn btn-primary bg-[#3B82F6] border-none px-8 py-4 rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
-        <button id="interview-btn" class="btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
-        <button id="Rejected-btn"   class=" btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
+        
+        <button id="All-btn" class=" all-fillter-btn all-btn-copy btn btn-primary bg-[#3B82F6] border-none px-8 py-4 rounded-md hover:bg-[#0451cc] text-white font-bold text-md hover:transition-.3s">All</button>
+        <button id="interview-btn"class=" all-fillter-btn  active btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-green-700 text-[#64748B] font-bold text-md hover:text-white hover:transition-.5s">Interview</button>
+        <button id="Rejected-btn" class="all-fillter-btn  active  btn btn-primary bg-[#FFFFFF] border-none px-4 py-4 rounded-md hover:bg-red-700 text-[#64748B] font-bold text-md   hover:text-white hover:transition-.3s  ">Rejected</button>
+     
       </div>
 
       
@@ -701,6 +704,8 @@
 
   <script src="assets/script/script.js"></script>
   <script src="assets/script/machine.js"></script>
+
+  <script src="assets/script/btns.js"></script>
 
 </body>
 </html>
